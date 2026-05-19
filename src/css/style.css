@@ -318,3 +318,207 @@ header nav ul li a:hover {
 .btn-adicionar:hover {
     background-color: var(--cor-acento2);
 }
+
+.carrinho-header {
+    position: relative;
+    background: none;
+    border: 2px solid var(--cor-acento);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-acento);
+}
+
+.carrinho-header:hover {
+    background-color: var(--cor-acento);
+    color: var(--bg-principal);
+}
+
+.carrinho-contador {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--cor-perigo);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrinho-painel {
+    position: fixed;
+    top: 0;
+    right: -380px;
+    width: 350px;
+    height: 100%;
+    background-color: var(--bg-principal);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s;
+}
+
+.carrinho-painel.aberto {
+    right: 0;
+}
+
+.carrinho-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1500;
+    display: none;
+}
+
+.carrinho-overlay.ativo {
+    display: block;
+}
+
+.carrinho-cabecalho {
+    background-color: var(--bg-card);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--cor-acento);
+}
+
+.carrinho-cabecalho h2 {
+    font-family: var(--font-titulo);
+    font-size: 18px;
+    color: var(--cor-acento);
+}
+
+.btn-fechar-carrinho {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--cor-texto);
+}
+
+.btn-fechar-carrinho:hover {
+    color: var(--cor-perigo);
+}
+
+.carrinho-itens {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.carrinho-vazio {
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-card);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.carrinho-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.carrinho-item-info {
+    flex: 1;
+}
+
+.carrinho-item-info p {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--cor-titulo);
+}
+
+.carrinho-item-info span {
+    font-size: 13px;
+    color: var(--cor-acento);
+    font-weight: 700;
+}
+
+.btn-remover {
+    background-color: var(--cor-perigo);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-remover:hover {
+    background-color: #c0392b;
+}
+
+.carrinho-rodape {
+    background-color: var(--bg-card);
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid var(--cor-acento);
+}
+
+.carrinho-total {
+    font-family: var(--font-titulo);
+    font-size: 16px;
+    color: var(--cor-acento);
+    margin-bottom: 10px;
+}
+
+.btn-finalizar {
+    padding: 10px 25px;
+    background-color: var(--cor-acento);
+    color: var(--bg-principal);
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-finalizar:hover {
+    background-color: var(--cor-acento2);
+}
+
+.alerta-carrinho {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--cor-acento);
+    color: var(--bg-principal);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    z-index: 3000;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.alerta-carrinho.visivel {
+    opacity: 1;
+}
