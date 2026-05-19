@@ -54,10 +54,111 @@
         </div>
       </div>
     </section>
+    <section class="produtos">
+      <div class="card-produtos">
+        <h1 id="p-titulo">🕹️ Produtos</h1>
+        <div class="cards">
+          <div class="card-produto">
+            <img src="../src/assets/img/teclado.jfif" alt="Teclado mecânico gamer" class="img-produto">
+            <p>Teclado Mecânico RGB</p>
+            <span class="preco">R$ 262,42</span>
+            <button class="btn-adicionar" data-nome="Teclado Mecânico RGB" data-preco="262.42"
+              data-img="../src/assets/img/teclado.jfif">🛒 ADICIONAR</button>
+          </div>
+
+          <div class="card-produto">
+            <img src="../src/assets/img/mouse.png" alt="Mouse gamer" class="img-produto">
+            <p>Mouse Gamer 16000 DPI</p>
+            <span class="preco">R$ 159,90</span>
+            <button class="btn-adicionar" data-nome="Mouse Gamer 16000 DPI" data-preco="159.90"
+              data-img="../src/assets/img/mouse.png">🛒 ADICIONAR</button>
+          </div>
+
+          <div class="card-produto">
+            <img src="../src/assets/img/headset.jfif" alt="Headset gamer" class="img-produto">
+            <p>Headset 7.1 Surround</p>
+            <span class="preco">R$ 231,92</span>
+            <button class="btn-adicionar" data-nome="Headset 7.1 Surround" data-preco="231.92"
+              data-img="../src/assets/img/headset.jfif">🛒 ADICIONAR</button>
+          </div>
+
+          <div class="card-produto">
+            <img src="../src/assets/img/cadeira.jfif" alt="Cadeira gamer" class="img-produto">
+            <p>Cadeira Gamer Pro</p>
+            <span class="preco">R$ 999,90</span>
+            <button class="btn-adicionar" data-nome="Cadeira Gamer Pro" data-preco="999.90"
+              data-img="../src/assets/img/cadeira.jfif">🛒 ADICIONAR</button>
+          </div>
+
+          <div class="card-produto">
+            <img src="../src/assets/img/monitor.jfif" alt="Monitor gamer" class="img-produto">
+            <p>Monitor 144Hz 27"</p>
+            <span class="preco">R$ 1.519,90</span>
+            <button class="btn-adicionar" data-nome="Monitor 144Hz 27 polegadas" data-preco="1519.90"
+              data-img="../src/assets/img/monitor.jfif">🛒 ADICIONAR</button>
+          </div>
+
+          <div class="card-produto">
+            <img src="../src/assets/img/mousepad.png" alt="Mousepad gamer" class="img-produto">
+            <p>Mousepad RGB XL</p>
+            <span class="preco">R$ 89,90</span>
+            <button class="btn-adicionar" data-nome="Mousepad RGB XL" data-preco="89.90"
+              data-img="../src/assets/img/mousepad.png">🛒 ADICIONAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-coluna">
+        <h3>📞 CONTATO</h3>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>Email: contato@gamezone.com.br</p>
+      </div>
 
-  <body>
+      <div class="footer-coluna">
+        <h3>🌐 REDES SOCIAIS</h3>
+        <a href="#">Instagram: @gamezonebr</a>
+        <a href="#">Twitter: @gamezonebr</a>
+        <a href="#">Discord: GameZone BR</a>
+      </div>
 
-  </body>
+      <div class="footer-coluna">
+        <h3>🎮 GAMEZONE</h3>
+        <p>Level up no seu setup!</p>
+        <p>Os melhores periféricos gamer.</p>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&copy; 2026 GameZone FIAP — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="carrinho-overlay" id="carrinho-overlay"></div>
+
+  <div class="carrinho-painel" id="carrinho-painel">
+    <div class="carrinho-cabecalho">
+      <h2>🛒 Meu Carrinho</h2>
+      <button class="btn-fechar-carrinho" id="btn-fechar-carrinho">✕</button>
+    </div>
+
+    <div class="carrinho-itens" id="carrinho-itens">
+      <p class="carrinho-vazio" id="carrinho-vazio">Seu carrinho está vazio 🎮</p>
+    </div>
+
+    <div class="carrinho-rodape">
+      <p class="carrinho-total">Total: R$ <span id="carrinho-total">0,00</span></p>
+      <button class="btn-finalizar" id="btn-finalizar">FINALIZAR COMPRA</button>
+    </div>
+  </div>
+
+  <div class="alerta-carrinho" id="alerta-carrinho">✅ Item adicionado ao carrinho!</div>
+
+  <script src="../src/js/script.js"></script>
+</body>
+
+</html>
 
 </html>
