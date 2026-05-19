@@ -124,3 +124,116 @@ header nav ul li a:hover {
     margin-bottom: 35px;
 }
 
+.nav-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-card {
+    width: 200px;
+    background-color: var(--bg-card-item);
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--cor-borda);
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-acento);
+}
+
+.nav-card .nav-icon {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.nav-card .nav-label {
+    display: block;
+    font-family: var(--font-titulo);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor-titulo);
+}
+
+.promo {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-promo-container {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 1100px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card-promo-container h2 {
+    font-family: var(--font-titulo);
+    font-size: 28px;
+    color: var(--cor-acento);
+    margin-bottom: 10px;
+}
+
+.promo-subtitle {
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.cards-promos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.card-promo {
+    width: 280px;
+    background-color: var(--bg-card-item);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card-promo:hover {
+    transform: translateY(-5px);
+}
+
+.img-promo {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-promo p {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-acento);
+}
+
+.ver-mais-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--cor-acento);
+    color: var(--bg-principal);
+    font-weight: 700;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.ver-mais-btn:hover {
+    transform: scale(1.05);
+}
