@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a GameZone. Envie sua mensagem, dúvida ou sugestão.">
+  <link rel="stylesheet" href="../src/css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>Contato | GameZone</title>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html" class="logo">GAME<span>ZONE</span></a>
+    <nav>
+      <ul id="menu-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./portfolio.html">Portfólio</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="menu-bazinga" id="btn-menu">&#9776;</button>
+  </header>
+
+  <main>
+    <section class="contato-hero">
+      <div class="contato-card">
+        <h1>📧 Fale Conosco</h1>
+        <p class="contato-subtitulo">Tem alguma dúvida, sugestão ou quer saber mais sobre nossos produtos? Preencha o
+          formulário abaixo!</p>
+
+        <form class="contato-form" id="form-contato">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Ex: Dúvida sobre produto" required>
+          </div>
+
+          <div class="campo">
+            <label for="descricao">Mensagem</label>
+            <textarea id="descricao" name="descricao" rows="6" placeholder="Escreva sua mensagem aqui..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar" id="btn-enviar">🎮 ENVIAR</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-coluna">
+        <h3>📞 CONTATO</h3>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>Email: contato@gamezone.com.br</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>🌐 REDES SOCIAIS</h3>
+        <a href="#">Instagram: @gamezonebr</a>
+        <a href="#">Twitter: @gamezonebr</a>
+        <a href="#">Discord: GameZone BR</a>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>🎮 GAMEZONE</h3>
+        <p>Level up no seu setup!</p>
+        <p>Os melhores periféricos gamer.</p>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&copy; 2026 GameZone FIAP — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+
+</html>
