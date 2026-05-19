@@ -78,3 +78,49 @@ header nav ul li a:hover {
     background-color: var(--cor-acento);
     color: var(--bg-principal);
 }
+
+.menu-bazinga {
+    display: none;
+    background: none;
+    border: 2px solid var(--cor-acento);
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--cor-acento);
+}
+
+.hero {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-item) 100%);
+    width: 100%;
+    max-width: 1100px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+}
+
+.hero-card h1 {
+    font-family: var(--font-titulo);
+    font-size: 38px;
+    color: var(--cor-titulo);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-card h1 .destaque {
+    color: var(--cor-acento);
+}
+
+.hero-card p.subtitulo {
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin-bottom: 35px;
+}
+
