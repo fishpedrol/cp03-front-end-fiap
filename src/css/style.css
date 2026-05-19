@@ -736,3 +736,129 @@ footer {
     color: #666;
     font-size: 12px;
 }
+
+/* ============ RESPONSIVO ============ */
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-card);
+        padding: 15px;
+        gap: 8px;
+        border-bottom: 2px solid var(--cor-acento);
+    }
+
+    header nav ul.menu-aberto {
+        display: flex;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-bazinga {
+        display: block;
+    }
+
+    .hero-card h1 {
+        font-size: 24px;
+    }
+
+    .nav-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-card {
+        width: 85%;
+    }
+
+    .cards-promos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-promo {
+        width: 85%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-produto {
+        width: 85%;
+    }
+
+    .sobre-destaques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-item {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contato-card {
+        padding: 30px 20px;
+    }
+
+    .carrinho-painel {
+        width: 100%;
+        right: -100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 12px;
+    }
+
+    header .logo {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 25px 10px;
+    }
+
+    .hero-card h1 {
+        font-size: 20px;
+    }
+
+    .promo {
+        padding: 20px 10px;
+    }
+
+    .card-promo-container,
+    .card-produtos {
+        padding: 20px 15px;
+    }
+
+    .card-promo-container h2,
+    #titulo,
+    #p-titulo {
+        font-size: 22px;
+    }
+
+    .contato-card h1 {
+        font-size: 26px;
+    }
+
+    .sobre-card h1 {
+        font-size: 26px;
+    }
+}
