@@ -1,0 +1,34 @@
+:root {
+    --bg-principal: #0d0d1a;
+    --bg-card: #1a1a2e;
+    --bg-card-item: #16213e;
+    --cor-acento: #00ff88;
+    --cor-acento2: #7b2fff;
+    --cor-texto: #e0e0e0;
+    --cor-titulo: #ffffff;
+    --cor-borda: #2a2a4a;
+    --cor-perigo: #ff4757;
+    --cor-sucesso: #00ff88;
+    --font-titulo: "Orbitron", sans-serif;
+    --font-corpo: "Exo 2", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-corpo);
+    background-color: var(--bg-principal);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--cor-acento);
+    text-decoration: none;
+}
