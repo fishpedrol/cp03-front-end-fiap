@@ -609,3 +609,77 @@ header nav ul li a:hover {
     background-color: var(--cor-acento2);
 }
 
+.sobre-hero {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.sobre-card {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 850px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.sobre-card h1 {
+    font-family: var(--font-titulo);
+    font-size: 28px;
+    color: var(--cor-acento);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.sobre-secao {
+    margin-bottom: 30px;
+}
+
+.sobre-secao h2 {
+    font-family: var(--font-titulo);
+    font-size: 20px;
+    color: var(--cor-acento);
+    margin-bottom: 10px;
+}
+
+.sobre-secao p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--cor-texto);
+}
+
+.sobre-destaques {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.sobre-item {
+    background-color: var(--bg-card-item);
+    padding: 20px 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+}
+
+.sobre-item .sobre-icone {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sobre-item h3 {
+    font-family: var(--font-titulo);
+    font-size: 15px;
+    color: var(--cor-titulo);
+    margin-bottom: 8px;
+}
+
+.sobre-item p {
+    font-size: 14px;
+    color: var(--cor-texto);
+}
