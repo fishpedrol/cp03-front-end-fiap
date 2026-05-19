@@ -32,3 +32,49 @@ a {
     color: var(--cor-acento);
     text-decoration: none;
 }
+
+header {
+    background-color: var(--bg-card);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--cor-acento);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--cor-acento);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header .logo span {
+    color: var(--cor-acento2);
+}
+
+header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--cor-acento);
+    color: var(--bg-principal);
+}
