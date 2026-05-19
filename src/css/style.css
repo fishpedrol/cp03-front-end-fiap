@@ -522,3 +522,90 @@ header nav ul li a:hover {
 .alerta-carrinho.visivel {
     opacity: 1;
 }
+
+.contato-hero {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.contato-card {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.contato-card h1 {
+    font-family: var(--font-titulo);
+    font-size: 28px;
+    color: var(--cor-acento);
+    margin-bottom: 10px;
+}
+
+.contato-subtitulo {
+    color: var(--cor-texto);
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: 700;
+    color: var(--cor-titulo);
+    font-size: 14px;
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px 15px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 8px;
+    background-color: var(--bg-card-item);
+    font-family: var(--font-corpo);
+    font-size: 14px;
+    color: var(--cor-texto);
+    outline: none;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: var(--cor-acento);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-enviar {
+    margin-top: 10px;
+    padding: 12px 30px;
+    background-color: var(--cor-acento);
+    color: var(--bg-principal);
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-acento2);
+}
+
