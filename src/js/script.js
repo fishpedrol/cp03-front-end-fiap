@@ -21,7 +21,7 @@ const alerta = document.getElementById("alerta-carrinho");
 const btnFinalizar = document.getElementById("btn-finalizar");
 
 const botoesAdicionar = document.querySelectorAll(".btn-adicionar");
-gi
+
 for (let i = 0; i < botoesAdicionar.length; i++) {
     botoesAdicionar[i].addEventListener("click", function () {
         const nome = this.getAttribute("data-nome");
