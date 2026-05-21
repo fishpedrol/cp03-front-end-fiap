@@ -517,12 +517,13 @@ header nav ul li a:hover {
     z-index: 3000;
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none;
 }
 
 .alerta-carrinho.visivel {
     opacity: 1;
+    pointer-events: auto;
 }
-
 .contato-hero {
     padding: 50px 20px;
     display: flex;
