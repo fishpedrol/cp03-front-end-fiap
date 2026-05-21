@@ -31,3 +31,58 @@ for (let i = 0; i < botoesAdicionar.length; i++) {
         adicionarAoCarrinho(nome, preco, img);
     });
 }
+
+function adicionarAoCarrinho(nome, preco, img) {
+    let encontrou = false;
+
+    for (let i = 0; i < carrinho.length; i++) {
+        if (carrinho[i].nome === nome) {
+            carrinho[i].quantidade = carrinho[i].quantidade + 1;
+            encontrou = true;
+            break;
+        }
+    }
+
+    if (!encontrou) {
+        const produto = {
+            nome: nome,
+            preco: preco,
+            img: img,
+            quantidade: 1
+        };
+        carrinho.push(produto);
+    }
+
+    atualizarCarrinho();
+    mostrarAlerta();
+}
+
+function removerDoCarrinho(indicenindice) {
+    carrinho.splice(indice, 1);
+    atualizarCarrinho();
+}
+
+function atualizarCarrinho() {
+    const totalItens = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
+    contadorSpan.textContent = totalItens;
+    textoVazio.style.display = carrinho.length === 0 ? "block" : "none";
+    listaItens.innerHTML = "";
+
+    carrinho.forEach((item, indice) => {
+        const precoFormatado = item.preco.toFixed(2).replace(".", ",");
+
+        listaItens.innerHTML += `
+            <div class="carrinho-item">
+                <img src="${item.img}" alt="${item.nome}">
+                <div class="carrinho-item-info">
+                    <p>${item.nome}</p>
+                    <span>R$ ${precoFormatado} x ${item.quantidade}</span>
+                </div>
+                <button class="btn-remover" onclick="removerDoCarrinho(${indice})">✕</button>
+            </div>
+        `;
+    });
+
+    const total = carrinho.reduce((acc, item) => acc + (item.preco * item.quantidade), 0);
+    totalSpan.textContent = total.toFixed(2).replace(".", ",");
+}
