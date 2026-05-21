@@ -103,3 +103,21 @@ function mostrarAlerta() {
         alerta.classList.remove("visivel");
     }, 2000);
 }
+
+if (btnCarrinho) btnCarrinho.addEventListener("click", abrirCarrinho);
+if (btnFechar) btnFechar.addEventListener("click", fecharCarrinho);
+if (overlay) overlay.addEventListener("click", fecharCarrinho);
+
+if (btnFinalizar) {
+    btnFinalizar.addEventListener("click", () => {
+        if (carrinho.length === 0) {
+            alert("Seu carrinho está vazio! Adicione produtos antes de finalizar.");
+        } else {
+            alert("Compra finalizada com sucesso! 🎮 Obrigado por comprar na GameZone!");
+            carrinho = [];
+            atualizarCarrinho();
+            fecharCarrinho();
+        }
+    });
+}
+
