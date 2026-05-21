@@ -7,6 +7,8 @@ if (btnMenu && menuNav) {
     });
 }
 
+// Carrinho de compras
+
 let carrinho = [];
 
 const btnCarrinho = document.getElementById("btn-carrinho");
@@ -121,3 +123,13 @@ if (btnFinalizar) {
     });
 }
 
+// Formulario de Contato
+const formContato = document.getElementById("form-contato");
+
+if (formContato) {
+    formContato.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+        formContato.reset();
+    });
+}
