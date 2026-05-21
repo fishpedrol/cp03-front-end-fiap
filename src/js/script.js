@@ -86,3 +86,20 @@ function atualizarCarrinho() {
     const total = carrinho.reduce((acc, item) => acc + (item.preco * item.quantidade), 0);
     totalSpan.textContent = total.toFixed(2).replace(".", ",");
 }
+
+function abrirCarrinho() {
+    painelCarrinho.classList.add("aberto");
+    overlay.classList.add("ativo");
+}
+
+function fecharCarrinho() {
+    painelCarrinho.classList.remove("aberto");
+    overlay.classList.remove("ativo");
+}
+
+function mostrarAlerta() {
+    alerta.classList.add("visivel");
+    setTimeout(() => {
+        alerta.classList.remove("visivel");
+    }, 2000);
+}
