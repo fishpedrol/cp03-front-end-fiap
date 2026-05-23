@@ -53,6 +53,18 @@ git clone https://github.com/fishpedrol/cp03-front-end-fiap.git
 
 2. Abra o arquivo `index.html` no navegador ou use um servidor local
 
+### 🌐 GitHub Pages
+
+Acesse o projeto online diretamente pelo GitHub Pages:
+👉 [https://fishpedrol.github.io/cp03-front-end-fiap/](https://fishpedrol.github.io/cp03-front-end-fiap/)
+
+Para ativar o GitHub Pages no seu repositório:
+1. Vá em **Settings** → **Pages**
+2. Selecione **Deploy from a branch**
+3. Escolha a branch **main** (ou **master**) e a pasta **/(root)**
+4. Clique em **Save**
+5. Aguarde alguns minutos e acesse o link fornecido
+
 ---
 
 ## 💻 Tecnologias Utilizadas
