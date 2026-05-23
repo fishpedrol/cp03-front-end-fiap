@@ -43,7 +43,7 @@ cp03-front-end-fiap/
 ## 🚀 Como Usar
 
 ### Pré-requisitos
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Navegador web (Chrome, Firefox, Safari, Edge)
 
 ### Instalação
 1. Clone o repositório:
