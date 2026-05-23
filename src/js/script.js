@@ -59,7 +59,7 @@ function adicionarAoCarrinho(nome, preco, img) {
     mostrarAlerta();
 }
 
-function removerDoCarrinho(indicenindice) {
+function removerDoCarrinho(indice) {
     carrinho.splice(indice, 1);
     atualizarCarrinho();
 }
